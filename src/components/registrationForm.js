@@ -30,6 +30,7 @@ function RegistrationForm() {
 
     const handleSubmit  = () => {
         console.log(firstName,lastName,email,password,confirmPassword);
+
     }
 
     return(
@@ -73,7 +74,13 @@ function RegistrationForm() {
             <div class="footer">
                 <button onClick={()=>handleSubmit()} type="submit" class="btn">Register</button>
             </div>
+            <div>
+                <p>First Name: {firstName}</p>
+                <p>Last Name: {firstName}</p>
+                <p>Email: {email}</p>
+            </div>
         </div>
+
        
     )       
 }
